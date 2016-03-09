@@ -14,6 +14,16 @@
 		E54091AD1C905DBA0050A3DD /* coreDataLearning.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E54091AB1C905DBA0050A3DD /* coreDataLearning.xcdatamodeld */; };
 		E54091AF1C905DBA0050A3DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E54091AE1C905DBA0050A3DD /* Assets.xcassets */; };
 		E54091B21C905DBA0050A3DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E54091B01C905DBA0050A3DD /* LaunchScreen.storyboard */; };
+		E54091BC1C905EC80050A3DD /* file_edit@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E54091BB1C905EC80050A3DD /* file_edit@2x.png */; };
+		E54091BE1C905F0B0050A3DD /* albums@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E54091BD1C905F0B0050A3DD /* albums@2x.png */; };
+		E54091C01C905F190050A3DD /* albums.png in Resources */ = {isa = PBXBuildFile; fileRef = E54091BF1C905F190050A3DD /* albums.png */; };
+		E54091C21C905F260050A3DD /* file_edit.png in Resources */ = {isa = PBXBuildFile; fileRef = E54091C11C905F260050A3DD /* file_edit.png */; };
+		E5BCB0BE1C90865A002AE3C0 /* trash@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5BCB0BD1C90865A002AE3C0 /* trash@2x.png */; };
+		E5BCB0C01C908677002AE3C0 /* upload@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5BCB0BF1C908677002AE3C0 /* upload@2x.png */; };
+		E5BCB0C21C908696002AE3C0 /* more@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5BCB0C11C908696002AE3C0 /* more@2x.png */; };
+		E5BCB0C61C9086BA002AE3C0 /* more.png in Resources */ = {isa = PBXBuildFile; fileRef = E5BCB0C31C9086BA002AE3C0 /* more.png */; };
+		E5BCB0C71C9086BA002AE3C0 /* trash.png in Resources */ = {isa = PBXBuildFile; fileRef = E5BCB0C41C9086BA002AE3C0 /* trash.png */; };
+		E5BCB0C81C9086BA002AE3C0 /* upload.png in Resources */ = {isa = PBXBuildFile; fileRef = E5BCB0C51C9086BA002AE3C0 /* upload.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +38,16 @@
 		E54091AE1C905DBA0050A3DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E54091B11C905DBA0050A3DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E54091B31C905DBA0050A3DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E54091BB1C905EC80050A3DD /* file_edit@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "file_edit@2x.png"; sourceTree = "<group>"; };
+		E54091BD1C905F0B0050A3DD /* albums@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "albums@2x.png"; sourceTree = "<group>"; };
+		E54091BF1C905F190050A3DD /* albums.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = albums.png; sourceTree = "<group>"; };
+		E54091C11C905F260050A3DD /* file_edit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = file_edit.png; sourceTree = "<group>"; };
+		E5BCB0BD1C90865A002AE3C0 /* trash@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "trash@2x.png"; sourceTree = "<group>"; };
+		E5BCB0BF1C908677002AE3C0 /* upload@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "upload@2x.png"; sourceTree = "<group>"; };
+		E5BCB0C11C908696002AE3C0 /* more@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "more@2x.png"; sourceTree = "<group>"; };
+		E5BCB0C31C9086BA002AE3C0 /* more.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = more.png; sourceTree = "<group>"; };
+		E5BCB0C41C9086BA002AE3C0 /* trash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trash.png; sourceTree = "<group>"; };
+		E5BCB0C51C9086BA002AE3C0 /* upload.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = upload.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +80,7 @@
 		E540919E1C905DBA0050A3DD /* coreDataLearning */ = {
 			isa = PBXGroup;
 			children = (
+				E54091B91C905EA40050A3DD /* Assets */,
 				E54091A21C905DBA0050A3DD /* AppDelegate.h */,
 				E54091A31C905DBA0050A3DD /* AppDelegate.m */,
 				E54091A51C905DBA0050A3DD /* ViewController.h */,
@@ -80,6 +101,31 @@
 				E54091A01C905DBA0050A3DD /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E54091B91C905EA40050A3DD /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				E54091BA1C905EAC0050A3DD /* Images */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		E54091BA1C905EAC0050A3DD /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				E54091BD1C905F0B0050A3DD /* albums@2x.png */,
+				E54091BF1C905F190050A3DD /* albums.png */,
+				E5BCB0BF1C908677002AE3C0 /* upload@2x.png */,
+				E54091C11C905F260050A3DD /* file_edit.png */,
+				E5BCB0C11C908696002AE3C0 /* more@2x.png */,
+				E5BCB0C31C9086BA002AE3C0 /* more.png */,
+				E5BCB0C41C9086BA002AE3C0 /* trash.png */,
+				E5BCB0C51C9086BA002AE3C0 /* upload.png */,
+				E5BCB0BD1C90865A002AE3C0 /* trash@2x.png */,
+				E54091BB1C905EC80050A3DD /* file_edit@2x.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +187,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				E54091B21C905DBA0050A3DD /* LaunchScreen.storyboard in Resources */,
+				E54091C01C905F190050A3DD /* albums.png in Resources */,
+				E5BCB0C71C9086BA002AE3C0 /* trash.png in Resources */,
+				E5BCB0C01C908677002AE3C0 /* upload@2x.png in Resources */,
 				E54091AF1C905DBA0050A3DD /* Assets.xcassets in Resources */,
+				E5BCB0BE1C90865A002AE3C0 /* trash@2x.png in Resources */,
+				E54091BC1C905EC80050A3DD /* file_edit@2x.png in Resources */,
+				E5BCB0C61C9086BA002AE3C0 /* more.png in Resources */,
 				E54091AA1C905DBA0050A3DD /* Main.storyboard in Resources */,
+				E5BCB0C81C9086BA002AE3C0 /* upload.png in Resources */,
+				E54091BE1C905F0B0050A3DD /* albums@2x.png in Resources */,
+				E54091C21C905F260050A3DD /* file_edit.png in Resources */,
+				E5BCB0C21C908696002AE3C0 /* more@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +359,7 @@
 				E54091B81C905DBA0050A3DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
