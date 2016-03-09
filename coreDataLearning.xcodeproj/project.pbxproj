@@ -24,6 +24,8 @@
 		E5BCB0C61C9086BA002AE3C0 /* more.png in Resources */ = {isa = PBXBuildFile; fileRef = E5BCB0C31C9086BA002AE3C0 /* more.png */; };
 		E5BCB0C71C9086BA002AE3C0 /* trash.png in Resources */ = {isa = PBXBuildFile; fileRef = E5BCB0C41C9086BA002AE3C0 /* trash.png */; };
 		E5BCB0C81C9086BA002AE3C0 /* upload.png in Resources */ = {isa = PBXBuildFile; fileRef = E5BCB0C51C9086BA002AE3C0 /* upload.png */; };
+		E5C24A241C909575000E70D5 /* CoreDataActions.m in Sources */ = {isa = PBXBuildFile; fileRef = E5C24A231C909575000E70D5 /* CoreDataActions.m */; };
+		E5C24A261C90986F000E70D5 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5C24A251C90986F000E70D5 /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,9 @@
 		E5BCB0C31C9086BA002AE3C0 /* more.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = more.png; sourceTree = "<group>"; };
 		E5BCB0C41C9086BA002AE3C0 /* trash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trash.png; sourceTree = "<group>"; };
 		E5BCB0C51C9086BA002AE3C0 /* upload.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = upload.png; sourceTree = "<group>"; };
+		E5C24A221C909575000E70D5 /* CoreDataActions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataActions.h; sourceTree = "<group>"; };
+		E5C24A231C909575000E70D5 /* CoreDataActions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataActions.m; sourceTree = "<group>"; };
+		E5C24A251C90986F000E70D5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5C24A261C90986F000E70D5 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +86,8 @@
 		E540919E1C905DBA0050A3DD /* coreDataLearning */ = {
 			isa = PBXGroup;
 			children = (
+				E5C24A271C90987D000E70D5 /* Linked Frameworks */,
+				E5C24A211C90951F000E70D5 /* Core Data Manager */,
 				E54091B91C905EA40050A3DD /* Assets */,
 				E54091A21C905DBA0050A3DD /* AppDelegate.h */,
 				E54091A31C905DBA0050A3DD /* AppDelegate.m */,
@@ -126,6 +134,23 @@
 				E54091BB1C905EC80050A3DD /* file_edit@2x.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		E5C24A211C90951F000E70D5 /* Core Data Manager */ = {
+			isa = PBXGroup;
+			children = (
+				E5C24A221C909575000E70D5 /* CoreDataActions.h */,
+				E5C24A231C909575000E70D5 /* CoreDataActions.m */,
+			);
+			name = "Core Data Manager";
+			sourceTree = "<group>";
+		};
+		E5C24A271C90987D000E70D5 /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E5C24A251C90986F000E70D5 /* CoreData.framework */,
+			);
+			name = "Linked Frameworks";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +237,7 @@
 				E54091AD1C905DBA0050A3DD /* coreDataLearning.xcdatamodeld in Sources */,
 				E54091A71C905DBA0050A3DD /* ViewController.m in Sources */,
 				E54091A41C905DBA0050A3DD /* AppDelegate.m in Sources */,
+				E5C24A241C909575000E70D5 /* CoreDataActions.m in Sources */,
 				E54091A11C905DBA0050A3DD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
