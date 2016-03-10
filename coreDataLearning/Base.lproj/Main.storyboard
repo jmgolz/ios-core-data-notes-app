@@ -188,6 +188,11 @@
                             <constraint firstItem="jl8-Ye-55E" firstAttribute="top" secondItem="yd8-xT-zrz" secondAttribute="bottom" constant="28" id="tRH-Wf-eDa"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="authorTextField" destination="gbm-x1-vJH" id="3zH-LM-Dd2"/>
+                        <outlet property="noteNameTextField" destination="yd8-xT-zrz" id="e6X-QD-cc3"/>
+                        <outlet property="tagsPicker" destination="0od-2X-sOO" id="WoW-ji-KU4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nPI-PR-Oa6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

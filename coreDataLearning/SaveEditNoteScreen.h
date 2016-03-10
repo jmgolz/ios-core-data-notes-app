@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface SaveEditNoteScreen : UIViewController
-@property NSString *notesTextField;
+@property NSString *noteTextBody;
+@property (weak, nonatomic) IBOutlet UITextField *authorTextField;
+@property (weak, nonatomic) IBOutlet UITextField *noteNameTextField;
+@property (weak, nonatomic) IBOutlet UIPickerView *tagsPicker;
+
 @end
