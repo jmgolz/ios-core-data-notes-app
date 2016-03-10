@@ -29,14 +29,14 @@
                                     <color key="titleColor" red="0.36862745099999999" green="0.70980392160000005" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="hLO-ea-KGP" kind="show" id="Z20-jP-kBf"/>
+                                    <segue destination="hLO-ea-KGP" kind="show" identifier="MainScreenNotesToNotesController" id="Z20-jP-kBf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ee9-BB-WnR">
                                 <rect key="frame" x="354" y="179" width="22" height="22"/>
                                 <state key="normal" image="albums.png"/>
                                 <connections>
-                                    <segue destination="l2g-jC-cxs" kind="show" id="WGx-NQ-agf"/>
+                                    <segue destination="l2g-jC-cxs" kind="show" identifier="MainScreenNotesListToNotesList" id="WGx-NQ-agf"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -59,7 +59,7 @@
         <!--Edit / View Note-->
         <scene sceneID="75Y-Au-DhM">
             <objects>
-                <viewController title="Edit / View Note" id="hLO-ea-KGP" sceneMemberID="viewController">
+                <viewController title="Edit / View Note" id="hLO-ea-KGP" customClass="NotesScreenViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rJ0-8c-zTJ"/>
                         <viewControllerLayoutGuide type="bottom" id="Wq2-nV-kSL"/>
@@ -86,13 +86,17 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <items>
                                     <tabBarItem title="Save Note" image="upload.png" id="6Dm-x8-hnx"/>
-                                    <tabBarItem title="Edit Note" image="more.png" id="1gP-1W-5W2"/>
-                                    <tabBarItem title="Delete Note" image="trash.png" id="RXn-VA-BFe"/>
+                                    <tabBarItem tag="1" title="Edit Note" image="more.png" id="1gP-1W-5W2"/>
+                                    <tabBarItem tag="2" title="Delete Note" image="trash.png" id="RXn-VA-BFe"/>
                                 </items>
                             </tabBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="notesTextField" destination="Gth-ig-56k" id="bqE-Xa-iQw"/>
+                        <segue destination="lkI-M1-sUd" kind="show" identifier="NoteToSaveOrEditNote" id="1tO-do-8U0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qcd-JD-Prn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -101,7 +105,7 @@
         <!--Add Note Details-->
         <scene sceneID="8lf-eR-9ss">
             <objects>
-                <viewController title="Add Note Details" id="lkI-M1-sUd" sceneMemberID="viewController">
+                <viewController title="Add Note Details" id="lkI-M1-sUd" customClass="SaveEditNoteScreen" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zoa-5b-Y96"/>
                         <viewControllerLayoutGuide type="bottom" id="iYF-Sr-8A4"/>
@@ -140,7 +144,7 @@
                         </connections>
                     </tableView>
                     <connections>
-                        <segue destination="hLO-ea-KGP" kind="show" id="Y3D-da-lcu"/>
+                        <segue destination="hLO-ea-KGP" kind="show" identifier="NotesListToMainScreen" id="Y3D-da-lcu"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZkU-Eq-kAL" userLabel="First Responder" sceneMemberID="firstResponder"/>
