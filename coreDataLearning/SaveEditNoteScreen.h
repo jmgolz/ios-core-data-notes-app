@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface SaveEditNoteScreen : UIViewController
-
+@property NSString *notesTextField;
 @end
