@@ -23,10 +23,10 @@
 		E59860A01C91E56200BBFDD4 /* NotesScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E598609F1C91E56200BBFDD4 /* NotesScreenViewController.m */; };
 		E59860A41C91E66C00BBFDD4 /* TabBarDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E59860A31C91E66C00BBFDD4 /* TabBarDelegate.m */; };
 		E59860A71C91F04E00BBFDD4 /* SaveEditNoteScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = E59860A61C91F04E00BBFDD4 /* SaveEditNoteScreen.m */; };
-		E59860AA1C92146700BBFDD4 /* TagPickerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E59860A91C92146700BBFDD4 /* TagPickerDelegate.m */; };
+		E59860AA1C92146700BBFDD4 /* TagCollectionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E59860A91C92146700BBFDD4 /* TagCollectionDelegate.m */; };
 		E59860AE1C9214C200BBFDD4 /* TableviewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E59860AD1C9214C200BBFDD4 /* TableviewDelegate.m */; };
-		E59860B11C92150800BBFDD4 /* TagPickerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E59860B01C92150800BBFDD4 /* TagPickerDataSource.m */; };
 		E59860B41C92152F00BBFDD4 /* TableviewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E59860B31C92152F00BBFDD4 /* TableviewDataSource.m */; };
+		E59860B71C921A9900BBFDD4 /* TagCollectionDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E59860B61C921A9900BBFDD4 /* TagCollectionDataSource.m */; };
 		E5BCB0BE1C90865A002AE3C0 /* trash@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5BCB0BD1C90865A002AE3C0 /* trash@2x.png */; };
 		E5BCB0C01C908677002AE3C0 /* upload@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5BCB0BF1C908677002AE3C0 /* upload@2x.png */; };
 		E5BCB0C21C908696002AE3C0 /* more@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5BCB0C11C908696002AE3C0 /* more@2x.png */; };
@@ -63,14 +63,14 @@
 		E59860A31C91E66C00BBFDD4 /* TabBarDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarDelegate.m; sourceTree = "<group>"; };
 		E59860A51C91F04E00BBFDD4 /* SaveEditNoteScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveEditNoteScreen.h; sourceTree = "<group>"; };
 		E59860A61C91F04E00BBFDD4 /* SaveEditNoteScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveEditNoteScreen.m; sourceTree = "<group>"; };
-		E59860A81C92146700BBFDD4 /* TagPickerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagPickerDelegate.h; sourceTree = "<group>"; };
-		E59860A91C92146700BBFDD4 /* TagPickerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagPickerDelegate.m; sourceTree = "<group>"; };
+		E59860A81C92146700BBFDD4 /* TagCollectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagCollectionDelegate.h; sourceTree = "<group>"; };
+		E59860A91C92146700BBFDD4 /* TagCollectionDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagCollectionDelegate.m; sourceTree = "<group>"; };
 		E59860AC1C9214C200BBFDD4 /* TableviewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableviewDelegate.h; sourceTree = "<group>"; };
 		E59860AD1C9214C200BBFDD4 /* TableviewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableviewDelegate.m; sourceTree = "<group>"; };
-		E59860AF1C92150800BBFDD4 /* TagPickerDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagPickerDataSource.h; sourceTree = "<group>"; };
-		E59860B01C92150800BBFDD4 /* TagPickerDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagPickerDataSource.m; sourceTree = "<group>"; };
 		E59860B21C92152F00BBFDD4 /* TableviewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableviewDataSource.h; sourceTree = "<group>"; };
 		E59860B31C92152F00BBFDD4 /* TableviewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableviewDataSource.m; sourceTree = "<group>"; };
+		E59860B51C921A9900BBFDD4 /* TagCollectionDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagCollectionDataSource.h; sourceTree = "<group>"; };
+		E59860B61C921A9900BBFDD4 /* TagCollectionDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagCollectionDataSource.m; sourceTree = "<group>"; };
 		E5BCB0BD1C90865A002AE3C0 /* trash@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "trash@2x.png"; sourceTree = "<group>"; };
 		E5BCB0BF1C908677002AE3C0 /* upload@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "upload@2x.png"; sourceTree = "<group>"; };
 		E5BCB0C11C908696002AE3C0 /* more@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "more@2x.png"; sourceTree = "<group>"; };
@@ -194,8 +194,8 @@
 				E54091A31C905DBA0050A3DD /* AppDelegate.m */,
 				E59860A21C91E66C00BBFDD4 /* TabBarDelegate.h */,
 				E59860A31C91E66C00BBFDD4 /* TabBarDelegate.m */,
-				E59860A81C92146700BBFDD4 /* TagPickerDelegate.h */,
-				E59860A91C92146700BBFDD4 /* TagPickerDelegate.m */,
+				E59860A81C92146700BBFDD4 /* TagCollectionDelegate.h */,
+				E59860A91C92146700BBFDD4 /* TagCollectionDelegate.m */,
 				E59860AC1C9214C200BBFDD4 /* TableviewDelegate.h */,
 				E59860AD1C9214C200BBFDD4 /* TableviewDelegate.m */,
 			);
@@ -205,10 +205,10 @@
 		E59860AB1C92149B00BBFDD4 /* Viewcontroller Data Sources */ = {
 			isa = PBXGroup;
 			children = (
-				E59860AF1C92150800BBFDD4 /* TagPickerDataSource.h */,
-				E59860B01C92150800BBFDD4 /* TagPickerDataSource.m */,
 				E59860B21C92152F00BBFDD4 /* TableviewDataSource.h */,
 				E59860B31C92152F00BBFDD4 /* TableviewDataSource.m */,
+				E59860B51C921A9900BBFDD4 /* TagCollectionDataSource.h */,
+				E59860B61C921A9900BBFDD4 /* TagCollectionDataSource.m */,
 			);
 			name = "Viewcontroller Data Sources";
 			sourceTree = "<group>";
@@ -312,10 +312,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E59860AE1C9214C200BBFDD4 /* TableviewDelegate.m in Sources */,
-				E59860AA1C92146700BBFDD4 /* TagPickerDelegate.m in Sources */,
+				E59860AA1C92146700BBFDD4 /* TagCollectionDelegate.m in Sources */,
 				E54091AD1C905DBA0050A3DD /* coreDataLearning.xcdatamodeld in Sources */,
 				E54091A71C905DBA0050A3DD /* MainScreen.m in Sources */,
-				E59860B11C92150800BBFDD4 /* TagPickerDataSource.m in Sources */,
 				E54091A41C905DBA0050A3DD /* AppDelegate.m in Sources */,
 				E57F44671C91BA45002F54D0 /* Notes.m in Sources */,
 				E59860A71C91F04E00BBFDD4 /* SaveEditNoteScreen.m in Sources */,
@@ -323,6 +322,7 @@
 				E59860A41C91E66C00BBFDD4 /* TabBarDelegate.m in Sources */,
 				E59860B41C92152F00BBFDD4 /* TableviewDataSource.m in Sources */,
 				E5C24A241C909575000E70D5 /* CoreDataActions.m in Sources */,
+				E59860B71C921A9900BBFDD4 /* TagCollectionDataSource.m in Sources */,
 				E59860A01C91E56200BBFDD4 /* NotesScreenViewController.m in Sources */,
 				E54091A11C905DBA0050A3DD /* main.m in Sources */,
 			);

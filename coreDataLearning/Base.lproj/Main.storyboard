@@ -150,24 +150,49 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tags:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jl8-Ye-55E">
-                                <rect key="frame" x="280" y="230" width="41.5" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0od-2X-sOO">
-                                <rect key="frame" x="140" y="259" width="320" height="124"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                            </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cp-NJ-Pvw">
                                 <rect key="frame" x="20" y="148" width="91" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8Xp-BU-p3y">
+                                <rect key="frame" x="20" y="236" width="560" height="270"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5dN-iO-yAR">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="50" height="50"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TagItemCell" id="dGq-Mq-Eh5">
+                                        <rect key="frame" x="0.0" y="50" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TagsCollectionListHeader" id="7ak-RX-FHf">
+                                    <rect key="frame" x="0.0" y="0.0" width="560" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tag this note" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CpW-Yt-CJj">
+                                            <rect key="frame" x="8" y="11" width="544" height="27.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="leadingMargin" secondItem="CpW-Yt-CJj" secondAttribute="leading" id="8sK-FV-uRj"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="CpW-Yt-CJj" secondAttribute="trailing" id="foT-7C-MEN"/>
+                                        <constraint firstItem="CpW-Yt-CJj" firstAttribute="top" secondItem="7ak-RX-FHf" secondAttribute="topMargin" constant="3" id="tae-sb-6VF"/>
+                                    </constraints>
+                                </collectionReusableView>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -181,17 +206,13 @@
                             <constraint firstItem="h16-lc-60W" firstAttribute="top" secondItem="zoa-5b-Y96" secondAttribute="bottom" constant="48" id="WPO-2o-jV2"/>
                             <constraint firstItem="gbm-x1-vJH" firstAttribute="centerX" secondItem="jOf-54-PIf" secondAttribute="centerX" id="WTH-Gx-EiQ"/>
                             <constraint firstAttribute="leadingMargin" secondItem="h16-lc-60W" secondAttribute="leading" id="dCf-Og-jpw"/>
-                            <constraint firstItem="jl8-Ye-55E" firstAttribute="centerX" secondItem="jOf-54-PIf" secondAttribute="centerX" id="epk-Br-hiU"/>
-                            <constraint firstItem="0od-2X-sOO" firstAttribute="top" secondItem="jl8-Ye-55E" secondAttribute="bottom" constant="8.5" id="klw-Wg-yfK"/>
                             <constraint firstItem="6cp-NJ-Pvw" firstAttribute="top" secondItem="gbm-x1-vJH" secondAttribute="bottom" constant="25" id="mEd-qp-lEF"/>
                             <constraint firstItem="gbm-x1-vJH" firstAttribute="top" secondItem="4ND-PW-25B" secondAttribute="bottom" constant="37.5" id="rmn-en-yZR"/>
-                            <constraint firstItem="jl8-Ye-55E" firstAttribute="top" secondItem="yd8-xT-zrz" secondAttribute="bottom" constant="28" id="tRH-Wf-eDa"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="authorTextField" destination="gbm-x1-vJH" id="3zH-LM-Dd2"/>
                         <outlet property="noteNameTextField" destination="yd8-xT-zrz" id="e6X-QD-cc3"/>
-                        <outlet property="tagsPicker" destination="0od-2X-sOO" id="WoW-ji-KU4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nPI-PR-Oa6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -207,10 +228,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="jlV-1G-6b9">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="NotesListItem" selectionStyle="default" indentationWidth="10" id="jlV-1G-6b9">
                                 <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jlV-1G-6b9" id="t64-kh-Y0G">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="NoteListItem" tableViewCell="jlV-1G-6b9" id="t64-kh-Y0G">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
@@ -238,6 +259,6 @@
         <image name="upload.png" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Z20-jP-kBf"/>
+        <segue reference="Y3D-da-lcu"/>
     </inferredMetricsTieBreakers>
 </document>
