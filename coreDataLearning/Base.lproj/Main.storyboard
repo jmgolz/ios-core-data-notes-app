@@ -8,7 +8,7 @@
         <!--Type Notes-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Type Notes" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController title="Type Notes" id="BYZ-38-t0r" customClass="MainScreen" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -160,6 +160,6 @@
         <image name="upload.png" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Y3D-da-lcu"/>
+        <segue reference="Z20-jP-kBf"/>
     </inferredMetricsTieBreakers>
 </document>

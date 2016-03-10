@@ -6,13 +6,13 @@
 //  Copyright © 2016 Sharks with Laser Spines. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "MainScreen.h"
 
-@interface ViewController ()
+@interface MainScreen ()
 
 @end
 
-@implementation ViewController
+@implementation MainScreen
 
 - (void)viewDidLoad {
     [super viewDidLoad];

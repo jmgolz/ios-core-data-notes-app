@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		E54091A11C905DBA0050A3DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E54091A01C905DBA0050A3DD /* main.m */; };
 		E54091A41C905DBA0050A3DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E54091A31C905DBA0050A3DD /* AppDelegate.m */; };
-		E54091A71C905DBA0050A3DD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E54091A61C905DBA0050A3DD /* ViewController.m */; };
+		E54091A71C905DBA0050A3DD /* MainScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = E54091A61C905DBA0050A3DD /* MainScreen.m */; };
 		E54091AA1C905DBA0050A3DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E54091A81C905DBA0050A3DD /* Main.storyboard */; };
 		E54091AD1C905DBA0050A3DD /* coreDataLearning.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E54091AB1C905DBA0050A3DD /* coreDataLearning.xcdatamodeld */; };
 		E54091AF1C905DBA0050A3DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E54091AE1C905DBA0050A3DD /* Assets.xcassets */; };
@@ -38,8 +38,8 @@
 		E54091A01C905DBA0050A3DD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E54091A21C905DBA0050A3DD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E54091A31C905DBA0050A3DD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E54091A51C905DBA0050A3DD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E54091A61C905DBA0050A3DD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E54091A51C905DBA0050A3DD /* MainScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainScreen.h; sourceTree = "<group>"; };
+		E54091A61C905DBA0050A3DD /* MainScreen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainScreen.m; sourceTree = "<group>"; };
 		E54091A91C905DBA0050A3DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E54091AC1C905DBA0050A3DD /* coreDataLearning.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = coreDataLearning.xcdatamodel; sourceTree = "<group>"; };
 		E54091AE1C905DBA0050A3DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -107,8 +107,6 @@
 				E5C24A271C90987D000E70D5 /* Linked Frameworks */,
 				E5C24A211C90951F000E70D5 /* Core Data Manager */,
 				E54091B91C905EA40050A3DD /* Assets */,
-				E54091A51C905DBA0050A3DD /* ViewController.h */,
-				E54091A61C905DBA0050A3DD /* ViewController.m */,
 				E54091A81C905DBA0050A3DD /* Main.storyboard */,
 				E54091AE1C905DBA0050A3DD /* Assets.xcassets */,
 				E54091B01C905DBA0050A3DD /* LaunchScreen.storyboard */,
@@ -166,6 +164,8 @@
 		E598609D1C91E53E00BBFDD4 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				E54091A51C905DBA0050A3DD /* MainScreen.h */,
+				E54091A61C905DBA0050A3DD /* MainScreen.m */,
 				E598609E1C91E56200BBFDD4 /* NotesScreenViewController.h */,
 				E598609F1C91E56200BBFDD4 /* NotesScreenViewController.m */,
 				E59860A51C91F04E00BBFDD4 /* SaveEditNoteScreen.h */,
@@ -284,7 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E54091AD1C905DBA0050A3DD /* coreDataLearning.xcdatamodeld in Sources */,
-				E54091A71C905DBA0050A3DD /* ViewController.m in Sources */,
+				E54091A71C905DBA0050A3DD /* MainScreen.m in Sources */,
 				E54091A41C905DBA0050A3DD /* AppDelegate.m in Sources */,
 				E57F44671C91BA45002F54D0 /* Notes.m in Sources */,
 				E59860A71C91F04E00BBFDD4 /* SaveEditNoteScreen.m in Sources */,
