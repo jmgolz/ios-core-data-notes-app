@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="14F1021" minimumToolsVersion="Automatic">
-    <entity name="Notes" syncable="YES">
+    <entity name="Notes" representedClassName="Notes" syncable="YES">
         <attribute name="author" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="date_saved" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="date_updated" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="note" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="note_tags" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Tags" inverseName="tags_to_notes" inverseEntity="Tags" syncable="YES"/>
     </entity>
-    <entity name="Tags" syncable="YES">
+    <entity name="Tags" representedClassName="Tags" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="tag_body" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="tags_to_notes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Notes" inverseName="note_tags" inverseEntity="Notes" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Notes" positionX="-63" positionY="-18" width="128" height="118"/>
-        <element name="Tags" positionX="-317" positionY="-1" width="128" height="88"/>
+        <element name="Notes" positionX="-63" positionY="-18" width="128" height="120"/>
+        <element name="Tags" positionX="-317" positionY="-1" width="128" height="90"/>
     </elements>
 </model>
