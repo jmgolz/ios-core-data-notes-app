@@ -16,13 +16,19 @@
 @implementation NotesScreenViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
+    [super viewDidLoad];    
+    [self.notesTextField setDelegate:self];
+    
     // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)textViewDidEndEditing:(UITextView *)textView{
+    [textView resignFirstResponder];
 }
 
 

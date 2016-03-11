@@ -35,6 +35,8 @@
 		E5BCB0C81C9086BA002AE3C0 /* upload.png in Resources */ = {isa = PBXBuildFile; fileRef = E5BCB0C51C9086BA002AE3C0 /* upload.png */; };
 		E5C24A241C909575000E70D5 /* CoreDataActions.m in Sources */ = {isa = PBXBuildFile; fileRef = E5C24A231C909575000E70D5 /* CoreDataActions.m */; };
 		E5C24A261C90986F000E70D5 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5C24A251C90986F000E70D5 /* CoreData.framework */; };
+		E5C959A01C9330360015D34D /* running@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5C9599F1C9330360015D34D /* running@2x.png */; };
+		E5C959A21C9330430015D34D /* running.png in Resources */ = {isa = PBXBuildFile; fileRef = E5C959A11C9330430015D34D /* running.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +82,8 @@
 		E5C24A221C909575000E70D5 /* CoreDataActions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataActions.h; sourceTree = "<group>"; };
 		E5C24A231C909575000E70D5 /* CoreDataActions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataActions.m; sourceTree = "<group>"; };
 		E5C24A251C90986F000E70D5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		E5C9599F1C9330360015D34D /* running@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "running@2x.png"; sourceTree = "<group>"; };
+		E5C959A11C9330430015D34D /* running.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = running.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +158,8 @@
 				E5BCB0BF1C908677002AE3C0 /* upload@2x.png */,
 				E54091C11C905F260050A3DD /* file_edit.png */,
 				E5BCB0C11C908696002AE3C0 /* more@2x.png */,
+				E5C959A11C9330430015D34D /* running.png */,
+				E5C9599F1C9330360015D34D /* running@2x.png */,
 				E5BCB0C31C9086BA002AE3C0 /* more.png */,
 				E5BCB0C41C9086BA002AE3C0 /* trash.png */,
 				E5BCB0C51C9086BA002AE3C0 /* upload.png */,
@@ -288,6 +294,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5C959A21C9330430015D34D /* running.png in Resources */,
 				E54091B21C905DBA0050A3DD /* LaunchScreen.storyboard in Resources */,
 				E54091C01C905F190050A3DD /* albums.png in Resources */,
 				E5BCB0C71C9086BA002AE3C0 /* trash.png in Resources */,
@@ -298,6 +305,7 @@
 				E5BCB0C61C9086BA002AE3C0 /* more.png in Resources */,
 				E54091AA1C905DBA0050A3DD /* Main.storyboard in Resources */,
 				E5BCB0C81C9086BA002AE3C0 /* upload.png in Resources */,
+				E5C959A01C9330360015D34D /* running@2x.png in Resources */,
 				E54091BE1C905F0B0050A3DD /* albums@2x.png in Resources */,
 				E54091C21C905F260050A3DD /* file_edit.png in Resources */,
 				E5BCB0C21C908696002AE3C0 /* more@2x.png in Resources */,
