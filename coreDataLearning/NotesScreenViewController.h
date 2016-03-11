@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NotesScreenViewController : UIViewController <UITextViewDelegate>
+@interface NotesScreenViewController : UIViewController <UITextViewDelegate, UITabBarDelegate>
 @property (weak, nonatomic) IBOutlet UITextView *notesTextField;
+@property (weak, nonatomic) IBOutlet UITabBar *tabBar;
 
--(void)textViewDidEndEditing:(UITextView *)textView;
+
 @end

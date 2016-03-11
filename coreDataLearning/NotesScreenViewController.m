@@ -18,6 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];    
     [self.notesTextField setDelegate:self];
+    [self.tabBar setDelegate:self];
     
     // Do any additional setup after loading the view.
 }
@@ -27,15 +28,24 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item{
+    NSLog(@"item selected: %ld", (long)item.tag);
+    if (item.tag == 0) {
+        [self performSegueWithIdentifier:@"NoteToSaveOrEditNote" sender:nil];
+    }
+}
+
 -(void)textViewDidEndEditing:(UITextView *)textView{
     [textView resignFirstResponder];
 }
 
-
+-(BOOL)textViewShouldEndEditing:(UITextView *)textView{
+    return YES;
+}
 #pragma mark - Navigation
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    [segue destinationViewController];
+    [(SaveEditNoteScreen*)[segue destinationViewController] setNoteTextBody:[self.notesTextField text]];
 
 }
 

@@ -8,9 +8,12 @@
 
 #import "TagCollectionDataSource.h"
 
+
 @implementation TagCollectionDataSource
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
-    UICollectionViewCell *cell;
+    
+    TagsCollectionViewCell *cell = [[TagsCollectionViewCell alloc] init];
+    [cell setBackgroundColor:[UIColor colorWithRed:0.25f green:0.5f blue:0.25f alpha:1.0f]];
     
     return cell;
 }
