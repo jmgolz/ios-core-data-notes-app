@@ -7,11 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TagCollectionDataSource.h"
+#import "TagCollectionDelegate.h"
+#import "TagsCollectionViewCell.h"
+
 
 @interface SaveEditNoteScreen : UIViewController
 @property NSString *noteTextBody;
 @property (weak, nonatomic) IBOutlet UITextField *authorTextField;
 @property (weak, nonatomic) IBOutlet UITextField *noteNameTextField;
-@property (weak, nonatomic) IBOutlet UIPickerView *tagsPicker;
+@property (weak, nonatomic) IBOutlet UICollectionView *tagsSelection;
 
+
+@property TagCollectionDataSource *tagsDataSource;
+@property TagCollectionDelegate *tagsDelegate;
 @end

@@ -14,8 +14,23 @@
 
 @implementation SaveEditNoteScreen
 
+-(void)viewWillAppear:(BOOL)animated{
+
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.tagsDelegate = [[TagCollectionDelegate alloc] init];
+    self.tagsDataSource = [[TagCollectionDataSource alloc] init];
+
+    [self.tagsSelection setDataSource:self.tagsDataSource];
+    [self.tagsSelection setDelegate:self.tagsDelegate];
+    
+    if (self.noteTextBody) {
+        NSLog(@"NOTE: %@", self.noteTextBody);
+    } else {
+        NSLog(@"No data...");
+    }
     // Do any additional setup after loading the view.
 }
 
