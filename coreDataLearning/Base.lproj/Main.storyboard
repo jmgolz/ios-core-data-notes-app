@@ -152,12 +152,20 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gbm-x1-vJH">
                                 <rect key="frame" x="20" y="93" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="dismissKeyboard:" destination="lkI-M1-sUd" eventType="editingDidEnd" id="naz-7g-h6C"/>
+                                    <action selector="dismissKeyboard:" destination="lkI-M1-sUd" eventType="editingDidEndOnExit" id="qz7-vI-pmj"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yd8-xT-zrz">
                                 <rect key="frame" x="20" y="172" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="dismissKeyboard:" destination="lkI-M1-sUd" eventType="editingDidEnd" id="LL6-7e-JwW"/>
+                                    <action selector="dismissKeyboard:" destination="lkI-M1-sUd" eventType="editingDidEndOnExit" id="Wzh-xL-RVh"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cp-NJ-Pvw">
                                 <rect key="frame" x="20" y="148" width="91" height="20.5"/>

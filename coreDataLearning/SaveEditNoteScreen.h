@@ -12,7 +12,7 @@
 #import "TagsCollectionViewCell.h"
 
 
-@interface SaveEditNoteScreen : UIViewController
+@interface SaveEditNoteScreen : UIViewController<UITextFieldDelegate>
 @property NSString *noteTextBody;
 @property (weak, nonatomic) IBOutlet UITextField *authorTextField;
 @property (weak, nonatomic) IBOutlet UITextField *noteNameTextField;
@@ -21,4 +21,7 @@
 
 @property TagCollectionDataSource *tagsDataSource;
 @property TagCollectionDelegate *tagsDelegate;
+
+- (IBAction)dismissKeyboard:(id)sender;
+
 @end

@@ -39,6 +39,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+
 /*
 #pragma mark - Navigation
 
@@ -49,4 +50,7 @@
 }
 */
 
+- (IBAction)dismissKeyboard:(id)sender {
+    [(UITextField*)sender resignFirstResponder];
+}
 @end
