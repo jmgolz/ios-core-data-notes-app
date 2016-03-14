@@ -44,7 +44,15 @@
 }
 
 -(void)create:(NSManagedObject*)note{
+    NSError *error = nil;
+    [self.notesManagedObjectContext insertObject:note];
+    [self.notesManagedObjectContext save:&error];
     
+    if(error != nil){
+        NSLog(@"could not save because: %@", error.debugDescription);
+    } else {
+        NSLog(@"Note saved!");
+    }
 }
 
 -(void)update:(NSManagedObject*)note{
@@ -54,4 +62,15 @@
 -(void)delete:(NSManagedObject*)note{
     
 }
+
+-(void)fetchAllNotes{
+    
+}
+
+-(void)fetchNote:(NSInteger*)atIndex{
+    
+}
+
+
+
 @end

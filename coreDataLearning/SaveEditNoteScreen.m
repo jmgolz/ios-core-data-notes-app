@@ -31,6 +31,8 @@
     } else {
         NSLog(@"No data...");
     }
+    
+    self.coreDataActionsController = [[CoreDataActions alloc] init];
     // Do any additional setup after loading the view.
 }
 
@@ -53,4 +55,31 @@
 - (IBAction)dismissKeyboard:(id)sender {
     [(UITextField*)sender resignFirstResponder];
 }
+
+- (IBAction)saveNote:(id)sender{
+    Notes *note = [[Notes alloc] init];
+    note.note = self.noteTextBody;
+    note.author = self.authorTextField.text;
+    
+    [self.coreDataActionsController create:note];
+}
+
+- (void)makeRouteSavedDialog:(BOOL)didSaveRecord{
+    NSString *title;
+    NSString *body;
+    
+    if(didSaveRecord == YES){
+        title                                         = @"Success!";
+        body                                          = @"Successfully saved route.";
+    } else {
+        title                                         = @"Error!";
+        body                                          = @"There was a problem saving your route.";
+    }
+    UIAlertController *dialog                     = [UIAlertController alertControllerWithTitle:title message:body preferredStyle:UIAlertControllerStyleAlert];
+    [dialog addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil]];
+    [self presentViewController:dialog animated:YES completion:nil];
+}
+
+
+
 @end

@@ -10,6 +10,9 @@
 #import "TagCollectionDataSource.h"
 #import "TagCollectionDelegate.h"
 #import "TagsCollectionViewCell.h"
+#import "CoreDataActions.h"
+#import "Notes.h"
+#import "Tags.h"
 
 
 @interface SaveEditNoteScreen : UIViewController<UITextFieldDelegate>
@@ -18,10 +21,12 @@
 @property (weak, nonatomic) IBOutlet UITextField *noteNameTextField;
 @property (weak, nonatomic) IBOutlet UICollectionView *tagsSelection;
 
-
 @property TagCollectionDataSource *tagsDataSource;
 @property TagCollectionDelegate *tagsDelegate;
 
-- (IBAction)dismissKeyboard:(id)sender;
+@property CoreDataActions *coreDataActionsController;
 
+- (IBAction)dismissKeyboard:(id)sender;
+- (IBAction)saveNote:(id)sender;
+- (void)makeRouteSavedDialog:(BOOL)didSaveRecord;
 @end

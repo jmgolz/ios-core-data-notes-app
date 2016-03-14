@@ -20,5 +20,6 @@
 -(void)create:(NSManagedObject*)note;
 -(void)update:(NSManagedObject*)note;
 -(void)delete:(NSManagedObject*)note;
-
+-(void)fetchAllNotes;
+-(void)fetchNote:(NSInteger*)atIndex;
 @end
