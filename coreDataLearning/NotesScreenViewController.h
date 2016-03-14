@@ -11,6 +11,7 @@
 @interface NotesScreenViewController : UIViewController <UITextViewDelegate, UITabBarDelegate>
 @property (weak, nonatomic) IBOutlet UITextView *notesTextField;
 @property (weak, nonatomic) IBOutlet UITabBar *tabBar;
+- (IBAction)dismissKeyboard:(id)sender;
 
 
 @end

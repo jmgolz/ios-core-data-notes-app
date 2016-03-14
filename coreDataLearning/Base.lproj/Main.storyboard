@@ -90,11 +90,19 @@
                                     <tabBarItem tag="2" title="Delete Note" image="trash.png" id="RXn-VA-BFe"/>
                                 </items>
                             </tabBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FBf-9Z-iU8">
+                                <rect key="frame" x="493" y="27" width="87" height="30"/>
+                                <state key="normal" title="Done Typing"/>
+                                <connections>
+                                    <action selector="dismissKeyboard:" destination="hLO-ea-KGP" eventType="touchUpInside" id="4RQ-MD-UsM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="EvV-Es-yeo" firstAttribute="centerX" secondItem="tAg-2y-j85" secondAttribute="centerX" id="4Ml-Ii-50f"/>
                             <constraint firstItem="emP-m6-aJb" firstAttribute="leading" secondItem="tAg-2y-j85" secondAttribute="leadingMargin" constant="-20" id="7Iz-sf-9pV"/>
+                            <constraint firstItem="FBf-9Z-iU8" firstAttribute="top" secondItem="rJ0-8c-zTJ" secondAttribute="bottom" constant="7" id="Fgc-yw-8XM"/>
                             <constraint firstItem="emP-m6-aJb" firstAttribute="top" secondItem="Gth-ig-56k" secondAttribute="bottom" constant="7" id="Lc3-3w-ov1"/>
                             <constraint firstItem="Gth-ig-56k" firstAttribute="centerX" secondItem="tAg-2y-j85" secondAttribute="centerX" id="PmE-9S-ft9"/>
                             <constraint firstItem="Gth-ig-56k" firstAttribute="top" secondItem="EvV-Es-yeo" secondAttribute="bottom" constant="20" id="S6z-F9-SXa"/>
@@ -103,6 +111,7 @@
                             <constraint firstItem="Wq2-nV-kSL" firstAttribute="top" secondItem="emP-m6-aJb" secondAttribute="bottom" id="fx4-UC-2z0"/>
                             <constraint firstAttribute="trailingMargin" secondItem="emP-m6-aJb" secondAttribute="trailing" constant="-20" id="hAk-ZK-Ww8"/>
                             <constraint firstItem="EvV-Es-yeo" firstAttribute="top" secondItem="rJ0-8c-zTJ" secondAttribute="bottom" constant="8" id="kOS-32-y7P"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FBf-9Z-iU8" secondAttribute="trailing" id="sFd-81-GCS"/>
                             <constraint firstAttribute="leadingMargin" secondItem="Gth-ig-56k" secondAttribute="leading" id="sZg-lj-sFU"/>
                         </constraints>
                     </view>

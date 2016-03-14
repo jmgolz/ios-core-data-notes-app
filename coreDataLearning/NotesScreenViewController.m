@@ -50,4 +50,9 @@
 }
 
 
+- (IBAction)dismissKeyboard:(id)sender {
+    if ([self.notesTextField isFirstResponder]) {
+        [self.notesTextField resignFirstResponder];
+    }
+}
 @end
